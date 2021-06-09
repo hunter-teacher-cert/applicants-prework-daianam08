@@ -13,8 +13,8 @@ public class Time{
 	double percentTimePassed= (timeSinceMidnight/timeUntilMidnight);
 	System.out.println(percentTimePassed + "percentage of time passed");
 
-	double timeNow= (8*3600)+(47*60)+36
-	System.out.println("About " + (timeNow-timeSinceMidnight) "has passed since I started this lab") 
+	double timeNow= (8*3600)+(47*60)+36;
+	System.out.println("About " + (timeNow-timeSinceMidnight) + " seconds has passed since I started this lab") ;
 
 	
 	}
