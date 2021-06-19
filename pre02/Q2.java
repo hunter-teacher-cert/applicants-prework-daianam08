@@ -10,12 +10,14 @@ import java.util.Scanner;
 
 public class Q2 {
 	public static void main(String[] argss){
-	String line;
-	Scanner in = new Scanner(System.in);
-		
+    double celsius;
+	  Scanner in = new Scanner(System.in);
+  
 	System.out.println("Enter number for Celsius for Farenheit conversion");
-	double celsius = in.nextLine();
-	final double CONVERT= celsius((9/5)+32);
-	System.out.println("Farenheit = %2f", CONVERT);
+	celsius = in.nextDouble();
+  final double CONVERT= (celsius * 9/5)+32;
+	System.out.printf("Fahrenheit = %.1f degrees ", CONVERT);
 	}
 }
+
+//figure out how to output whats on line 8
