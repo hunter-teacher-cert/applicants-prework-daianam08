@@ -11,10 +11,14 @@ String month;
 month = "June";
 int year;
 year = 2021;
-System.out.print("American format:");
-System.out.print(day, month + date, year);
-System.out.print("European format:");
-System.out.println(day, date + month,year);
-
+System.out.println("American format:");
+System.out.println(day + ", "+ month +" "+ date+" "+ ", "+ year);
+System.out.println("European format:");
+System.out.println(day+ " " + date +" "+ month+" " + year);
 	}
 }
+
+// American format:
+// Thursday, July 16, 2015
+// European format:
+// Thursday 16 July 2015
