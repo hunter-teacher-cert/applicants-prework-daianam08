@@ -16,7 +16,7 @@ public class Q2 {
 	System.out.println("Enter number for Celsius for Farenheit conversion");
 	celsius = in.nextDouble();
   final double CONVERT= (celsius * 9/5)+32;
-	System.out.printf("Fahrenheit = %.1f degrees ", CONVERT);
+	System.out.printf("%.1f C = %.1f F ", celsius, CONVERT);
 	}
 }
 
