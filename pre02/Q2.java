@@ -19,5 +19,3 @@ public class Q2 {
 	System.out.printf("%.1f C = %.1f F ", celsius, CONVERT);
 	}
 }
-
-//figure out how to output whats on line 8
