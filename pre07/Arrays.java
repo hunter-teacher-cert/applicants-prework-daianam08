@@ -10,7 +10,7 @@ public class Arrays{
     // for (double x: hist){
     //   System.out.println(x);
     // }
-    int [] max= indexOfMax(scores);
+    int max= indexOfMax(scores);
     System.out.println(max);
 }
 
@@ -31,22 +31,23 @@ public static int[] histogram(int [] scores, int count){
 }
 
 // q4
-public static int[] indexOfMax(int [] abc){
-  int maxi=abc[0];
-  int [] finalMax;
+public static int indexOfMax(int [] abc){
+  int maxv=abc[0];
+  int finalMax;
+  int maxI=0;
   for (int i=1; i<abc.length; i++){
-    if (abc[i]>maxi){
-      maxi=abc[i];
-      finalMax[0]=maxi;
+    if (abc[i]>maxv){
+      maxv=abc[i];
+      maxI=i;
     }
   } 
-  return finalMax[0];
+  return maxI;
 };
 // cant use enhanced for loop 
 
 
-public static int[] sieve(int n){
+// public static int[] sieve(int n){
 
-}
+// }
 
 } //end of class 
