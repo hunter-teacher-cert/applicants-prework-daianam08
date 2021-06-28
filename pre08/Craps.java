@@ -16,7 +16,10 @@ public class Craps{
     System.out.println("Highest possible roll with entered dice number: " + shoot(dice));
 
     //part 3
-    int [] game= {roll(rollNum), shoot(dice)};
+    Scanner ing = new Scanner(System.in);
+    System.out.println("How many times you wanna play?");
+    int play= ing.nextInt();
+    int game= round(play, roll(rollNum), shoot(dice));
 
 
   } //main
@@ -34,21 +37,33 @@ public class Craps{
     return maxDice;
     } //shoot
 
-  public static int round(){
+//got me in an endless loop. i think i dont need an array??
+  public static int round(int t, int x, int y){
+    int score=0;
+    for(int h=0; h<t; h++){
     int [] lose={2, 3, 12};
     int [] win= {7,11};
+    while (y>0){
     for (int i=0; i<lose.length; i++){
-    if (lose[i]){
-      Sytem.out.println("Craps! You lose!");
-    } else if (win[i]){
+    if (lose[i]==x){
+      System.out.println("Craps! You lose!");
+    } else if (win[i]==x){
       System.out.println("Natural! You win!");
+      score++;
+      break;
     } else{
       System.out.println("Your value is a Point!");
+      score++;
       if (win[i]==7){
-        Sytem.out.println("Craps! You lose!");
+        System.out.println("Craps! You lose!");
+        break;
+      } else {
+        break;
       }
     }
     }
+    }
+    }return score;
   } //round
 
 
